@@ -13,8 +13,24 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Aminatou\\source\\repos\\ShoppingOnline\\ShoppingOnline\\wwwroot\\img\\Donna.jpg",
+      "PackagePath": "staticwebassets\\img\\Donna.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aminatou\\source\\repos\\ShoppingOnline\\ShoppingOnline\\wwwroot\\img\\Donna2.jpg",
+      "PackagePath": "staticwebassets\\img\\Donna2.jpg"
+    },
+    {
       "Id": "C:\\Users\\Aminatou\\source\\repos\\ShoppingOnline\\ShoppingOnline\\wwwroot\\img\\Image.jpg",
       "PackagePath": "staticwebassets\\img\\Image.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aminatou\\source\\repos\\ShoppingOnline\\ShoppingOnline\\wwwroot\\img\\Uomo1.avif",
+      "PackagePath": "staticwebassets\\img\\Uomo1.avif"
+    },
+    {
+      "Id": "C:\\Users\\Aminatou\\source\\repos\\ShoppingOnline\\ShoppingOnline\\wwwroot\\img\\Uomo2.avif",
+      "PackagePath": "staticwebassets\\img\\Uomo2.avif"
     },
     {
       "Id": "C:\\Users\\Aminatou\\source\\repos\\ShoppingOnline\\ShoppingOnline\\wwwroot\\js\\site.js",

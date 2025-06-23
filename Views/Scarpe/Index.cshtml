@@ -1,0 +1,40 @@
+﻿
+@model IEnumerable<ShoppingOnline.Models.CatalogoScarpe>
+@{
+    ViewData["Title"] = "Catalogo Scarpe";
+    Layout = "_Layout";
+}
+
+@if (Model != null && Model.Any())
+{
+    <p>Dati ricevuti: @Model.Count() scarpe.</p>
+}
+else
+{
+    <p>Nessuna scarpa trovata nel database.</p>
+}
+
+
+<h2>Catalogo Scarpe</h2>
+
+<div class="container">
+    <div class="row">
+        @foreach (var scarpa in Model)
+        {
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="@scarpa.ImmagineUrl" class="card-img-top" alt="@scarpa.Nome" style="height: 180px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">@scarpa.Nome</h5>
+                        <p class="card-text text-muted">@scarpa.Marca</p>
+                        <p class="card-text">@scarpa.Descrizione</p>
+                        <div class="mt-auto">
+                            <p class="fw-bold">@string.Format("{0:C}", scarpa.Price)</p>
+                            <a asp-action="Dettaglio" asp-roote-id="@scarpa.Id" class="btn btn-primary btn-sm">Dettagli</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

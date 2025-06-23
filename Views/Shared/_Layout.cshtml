@@ -8,29 +8,48 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/ShoppingOnline.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
-    <header>
-  
-                       
+    <header>               
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
     
                 <div class="dropdown">
-                    <button class="btn p-4 border-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="/img/Image.jpg" alt="Image" width="80" height="80" class="d-inline-block align-text-top">
+                    <button class="btn p-4 border-4 " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="/img/Image.jpg" alt="Image" width="80" height="80" class="d-inline-block align-text-top rounded-circle">
                     </button>
 
-                    <ul class="dropdown-menu dropdown-menu-end"  >
-                        <li><a class="dropdown-item" href="#">Donna</a></li>
-                        <li><a class="dropdown-item" href="#">Uomo</a></li>
-                        <li><a class="dropdown-item" href="#">Bambina</a></li>
-                        <li><a class="dropdown-item" href="#">Bambino</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Esci</a></li>
+                    <ul class="dropdown-menu dropdown-menu-end shadow-lg" style="border-radius: 10px;">
+                        <li class="dropdown-item">
+                            <a class="nav-link accordion-item" asp-area="" asp-controller="Home" asp-action="Donna">
+                                <i class="fas fa-female"></i> Donna
+                            </a>
+                        </li>
+
+                        <li class="dropdown-item">
+                            <a class="nav-link accordion-item" asp-area="" asp-controller="Home" asp-action="Uomo">
+                                <i class="fas fa-male"></i> 
+                                Uomo
+                            </a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="nav-link accordion-item" asp-area="" asp-controller="Home" asp-action="Bambina">
+                                <i class="fas fa-child"></i> Bambina
+                            </a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="nav-link accordion-item" asp-area="" asp-controller="Home" asp-action="Bambino">
+                                <i class="fas fa-child"></i> Bambino
+                            </a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="nav-link accordion-item" asp-area="">Esci</a>
+                        </li>
                     </ul>
                 </div>
-                
+
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,16 +62,16 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Catalogo_Scarpe">Catalogo scarpe</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Scarpe" asp-action="Index">Catalogo scarpe</a>
                         </li>
                        
                     </ul>
 
-                    <!-- Barra di ricerca completamente a destra -->
-                    <form class="d-flex ms-auto" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <form class="d-flex ms-auto" role="search" asp-controller="Scarpe" asp-action="Search" method="get">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="TestoDaCercare">
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
+
                 </div>
             </div>
         </nav>

@@ -16,24 +16,40 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Aminatou\source\repos\ShoppingOnline\ShoppingOnline
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Aminatou/source/repos/ShoppingOnline/ShoppingOnline/Views/Home/Carrello.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXJyZWxsby5jc2h0bWw=
+[C:/Users/Aminatou/source/repos/ShoppingOnline/ShoppingOnline/Views/Home/Bambina.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCYW1iaW5hLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aminatou/source/repos/ShoppingOnline/ShoppingOnline/Views/Home/Catalogo_Scarpe.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXRhbG9nb19TY2FycGUuY3NodG1s
+[C:/Users/Aminatou/source/repos/ShoppingOnline/ShoppingOnline/Views/Home/Bambino.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCYW1iaW5vLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aminatou/source/repos/ShoppingOnline/ShoppingOnline/Views/Home/Contatti.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YXR0aS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Aminatou/source/repos/ShoppingOnline/ShoppingOnline/Views/Home/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhaWxzLmNzaHRtbA==
+[C:/Users/Aminatou/source/repos/ShoppingOnline/ShoppingOnline/Views/Home/Donna.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEb25uYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Aminatou/source/repos/ShoppingOnline/ShoppingOnline/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aminatou/source/repos/ShoppingOnline/ShoppingOnline/Views/Home/Uomo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVb21vLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aminatou/source/repos/ShoppingOnline/ShoppingOnline/Views/Scarpe/Dettaglio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NhcnBlXERldHRhZ2xpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aminatou/source/repos/ShoppingOnline/ShoppingOnline/Views/Scarpe/EmptyResult.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NhcnBlXEVtcHR5UmVzdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aminatou/source/repos/ShoppingOnline/ShoppingOnline/Views/Scarpe/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NhcnBlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aminatou/source/repos/ShoppingOnline/ShoppingOnline/Views/Scarpe/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NhcnBlXFNlYXJjaC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Aminatou/source/repos/ShoppingOnline/ShoppingOnline/Views/Shared/Error.cshtml]

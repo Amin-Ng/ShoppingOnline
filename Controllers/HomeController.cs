@@ -18,31 +18,27 @@ namespace ShoppingOnline.Controllers
         {
             return View();
         }
-       
+        public IActionResult Donna()
+        {
+            return View();
+        }
+        public IActionResult Uomo()
+        {
+            return View();
+        }
+        public IActionResult Bambino()
+        {
+            return View();
+        }
+        public IActionResult bambina()
+        {
+            return View();
+        }
+
         public IActionResult  Catalogo_Scarpe()
         {
-            string brand = "Nike"; // oppure puoi usare i % 2 per alternare marche
-            decimal prezzo = 49.99m;
-            string descrizione = "Scarpe da indossare per l'estate e sentirsi più leggera che mai";
-          
-            var listaScarpa = new List<Scarpa>();
 
-            for (int i = 0; i < 10; i++)
-            {
-                Scarpa scarpa = new Scarpa
-                {
-                    Id = i,
-                    Brand = brand,
-                    Prezzo = prezzo,
-                    Descrizione = descrizione,
-                    Immagine="/img/image.jpg"
-                };
-
-                listaScarpa.Add(scarpa);
-            }
-
-
-            return View(listaScarpa);
+            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

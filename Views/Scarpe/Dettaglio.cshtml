@@ -1,0 +1,14 @@
+﻿@model ShoppingOnline.Models.CatalogoScarpe
+@{
+    ViewData["Title"] = "Detaglio Scarpa";
+}
+<h2>@Model.Nome</h2>
+<div class="card" style="width:18rem;">
+
+    <img src="~/img/@Model.ImmagineUrl" class="card-img-top" alt="@Model.Nome"/>
+    <div class="card-body">
+        <h5 class="card-title"> @Model.Marca</h5>
+       <p class="card-text">@Model.Descrizione</p>
+        <p class="fw-bold">@string.Format("{0:C}", Model.Price)</p>
+    </div>
+</div>
