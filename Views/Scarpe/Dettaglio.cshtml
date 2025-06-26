@@ -1,14 +1,54 @@
-﻿@model ShoppingOnline.Models.CatalogoScarpe
-@{
-    ViewData["Title"] = "Detaglio Scarpa";
-}
-<h2>@Model.Nome</h2>
-<div class="card" style="width:18rem;">
+﻿@model DettaglioScarpaViewModel
+<div>   
+    <h1>@Model.Scarpa.Nome</h1>
+    <p>Marca: @Model.Scarpa.Marca</p>
+    <p>Descrizione: @Model.Scarpa.Descrizione</p>
+    <p>Prezzo: €@Model.Scarpa.Price</p>
+    <img src="@Model.Scarpa.ImmagineUrl" alt="@Model.Scarpa.Nome" style="max-width:300px;" />
+    <div class="container mt-4">
+        <h5>Scegli una taglia:</h5>
+        <div class="d-flex flex-wrap gap-2">
+            @foreach (var t in Model.TaglieDisponibili)
+            {
+                if (t.Quantita <= 0)
+                {
+                    <button type="button" class="btn btn-outline-dark disabled">
+                        @t.Taglia (esaurita)
+                    </button>
+                }
+                else
+                {
+                    @if(t.Quantita<5)
+                    {
+                        <button type="button" class="btn btn-outline-warning" data-bs-toggle="tooltip" title="rimane solo @t.Quantita in botteca">
+                            @t.Taglia
+                        </button>
+                    }
+                    <button type="button" class="btn btn-outline-success">
+                        @t.Taglia
+                    </button>
+                }
+            }
+        </div>
 
-    <img src="~/img/@Model.ImmagineUrl" class="card-img-top" alt="@Model.Nome"/>
-    <div class="card-body">
-        <h5 class="card-title"> @Model.Marca</h5>
-       <p class="card-text">@Model.Descrizione</p>
-        <p class="fw-bold">@string.Format("{0:C}", Model.Price)</p>
     </div>
+    <br />
+    <br />
+    <h3>Potrebbero piacerti anche</h3>
+
+    <div class="row">
+        @foreach (var scarpa in Model.AltreProposte)
+        {
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <img src="@scarpa.ImmagineUrl" class="card-img-top" alt="@scarpa.Nome"/>
+                    <div class="card-body">
+                        <h5 class="card-title">@scarpa.Nome</h5>
+                        <p class="card-text">@scarpa.Descrizione</p>
+                        <p class="card-text"><strong>€ @scarpa.Price</strong></p>
+                        <a href="@Url.Action("Dettaglio", new { id = scarpa.Id })" class="btn btn-primary">Vedi dettaglio</a>
+                    </div>
+                </div>
+            </div>
+        }
 </div>

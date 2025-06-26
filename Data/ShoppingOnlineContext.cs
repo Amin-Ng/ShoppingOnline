@@ -1,12 +1,15 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using ShoppingOnline.Models; 
+using ShoppingOnline.Models;
 
 namespace ShoppingOnline.Data
 {
     public class ShoppingOnlineContext : DbContext
     {
+
         public ShoppingOnlineContext(DbContextOptions<ShoppingOnlineContext> options) : base(options) { }
         public DbSet<CatalogoScarpe> CatalogoScarpe { get; set; }
+        public DbSet<TagliaScarpa> TagliaScarpa { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -18,6 +21,6 @@ namespace ShoppingOnline.Data
             base.OnModelCreating(modelBuilder);
         }
     }
-   
+
 
 }

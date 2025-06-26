@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace ShoppingOnline.Models
 {
@@ -7,10 +8,10 @@ namespace ShoppingOnline.Models
         public int Id { get; set; }
 
         [Required]
-        public string? Nome { get; set; }
+        public string? Nome { get; set; } = default!;
 
         [Required]
-        public string? Marca { get; set; }
+        public string? Marca { get; set; } = default!;
 
         public string? Descrizione { get; set; }
 
@@ -18,5 +19,11 @@ namespace ShoppingOnline.Models
         public decimal Price { get; set; }
 
         public string? ImmagineUrl { get; set; }
+
+        [JsonPropertyName("TaglieDisponibili")]
+        public List<TagliaScarpa>? tagliaScarpa { get; set; }
+
+
+
     }
 }

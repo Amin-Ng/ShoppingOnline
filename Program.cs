@@ -3,7 +3,7 @@ using ShoppingOnline.Data;
 using ShoppingOnline.Models;
 using System.Text.Json;
 
-    var builder = WebApplication.CreateBuilder(args);
+var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ShoppingOnlineContext>(options =>
@@ -16,21 +16,23 @@ await using (var scope = app.Services.CreateAsyncScope())
     var services = scope.ServiceProvider;
     var context = services.GetRequiredService<ShoppingOnlineContext>();
 
-    context.Database.EnsureCreated();
+    await context.Database.EnsureCreatedAsync();
 
-    if (!await context.CatalogoScarpe.AnyAsync())
+    // Pulisce la tabella prima del seed
+    context.CatalogoScarpe.RemoveRange(context.CatalogoScarpe);
+    await context.SaveChangesAsync();
+
+    var path = Path.Combine(AppContext.BaseDirectory, "scarpe.json");
+    var jsonData = await File.ReadAllTextAsync(path);
+    var scarpe = JsonSerializer.Deserialize<List<CatalogoScarpe>>(jsonData);
+
+    if (scarpe != null)
     {
-        var path = Path.Combine(AppContext.BaseDirectory, "scarpe.json");
-        var jsonData = await File.ReadAllTextAsync(path);
-        var scarpe = JsonSerializer.Deserialize<List<CatalogoScarpe>>(jsonData);
-
-        if (scarpe != null)
-        {
-            await context.CatalogoScarpe.AddRangeAsync(scarpe);
-            await context.SaveChangesAsync();
-        }
+        await context.CatalogoScarpe.AddRangeAsync(scarpe);
+        await context.SaveChangesAsync();
     }
 }
+
 
 if (!app.Environment.IsDevelopment())
 {

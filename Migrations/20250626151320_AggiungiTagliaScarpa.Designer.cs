@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ShoppingOnline.Data;
 
@@ -10,9 +11,11 @@ using ShoppingOnline.Data;
 namespace ShoppingOnline.Migrations
 {
     [DbContext(typeof(ShoppingOnlineContext))]
-    partial class ShoppingOnlineContextModelSnapshot : ModelSnapshot
+    [Migration("20250626151320_AggiungiTagliaScarpa")]
+    partial class AggiungiTagliaScarpa
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

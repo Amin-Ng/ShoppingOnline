@@ -1,8 +1,11 @@
 ﻿@model IEnumerable<ShoppingOnline.Models.CatalogoScarpe>
 
 
-@if (Model.Any())
+@if (Model != null && Model.Any())
+{
+    <p>Sono presenti scarpe.</p>
+}
+else
 {
     <p>Nessun risultato trovato.</p>
-
 }

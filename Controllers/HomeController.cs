@@ -35,7 +35,7 @@ namespace ShoppingOnline.Controllers
             return View();
         }
 
-        public IActionResult  Catalogo_Scarpe()
+        public IActionResult Catalogo_Scarpe()
         {
 
             return View();

@@ -11,7 +11,7 @@ namespace ShoppingOnline.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "catalogo_Scarpes",
+                name: "catalogoScarpes",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -21,7 +21,7 @@ namespace ShoppingOnline.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_catalogo_Scarpes", x => x.Id);
+                    table.PrimaryKey("PK_catalogoScarpes", x => x.Id);
                 });
         }
 
@@ -29,7 +29,7 @@ namespace ShoppingOnline.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "catalogo_Scarpes");
+                name: "catalogoScarpes");
         }
     }
 }

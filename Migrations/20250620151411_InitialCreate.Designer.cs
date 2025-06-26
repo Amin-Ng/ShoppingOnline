@@ -41,7 +41,7 @@ namespace ShoppingOnline.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("catalogo_Scarpes");
+                    b.ToTable("catalogoScarpes");
                 });
 #pragma warning restore 612, 618
         }

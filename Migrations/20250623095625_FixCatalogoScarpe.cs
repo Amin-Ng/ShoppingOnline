@@ -11,11 +11,11 @@ namespace ShoppingOnline.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropPrimaryKey(
-                name: "PK_catalogo_Scarpes",
-                table: "catalogo_Scarpes");
+                name: "PKcatalogoScarpes",
+                table: "catalogoScarpes");
 
             migrationBuilder.RenameTable(
-                name: "catalogo_Scarpes",
+                name: "catalogoScarpes",
                 newName: "CatalogoScarpe");
 
             migrationBuilder.RenameColumn(
@@ -69,16 +69,16 @@ namespace ShoppingOnline.Migrations
 
             migrationBuilder.RenameTable(
                 name: "CatalogoScarpe",
-                newName: "catalogo_Scarpes");
+                newName: "catalogoScarpes");
 
             migrationBuilder.RenameColumn(
                 name: "Nome",
-                table: "catalogo_Scarpes",
+                table: "catalogoScarpes",
                 newName: "Name");
 
             migrationBuilder.AddPrimaryKey(
-                name: "PK_catalogo_Scarpes",
-                table: "catalogo_Scarpes",
+                name: "PKcatalogoScarpes",
+                table: "catalogoScarpes",
                 column: "Id");
         }
     }

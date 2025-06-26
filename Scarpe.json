@@ -1,16 +1,208 @@
 [
   {
-    "Nome": "Sneakers Runner",
+
+    "Nome": "Air Force 1 '07",
     "Marca": "Nike",
-    "Descrizione": "Scarpa sportiva leggera e comoda",
-    "Price": 89.99,
-    "ImmagineUrl": "/img/Uomo1.jpg"
+    "Descrizione": "Sneaker bianca iconica in pelle, perfetta per look streetwear.",
+    "Price": 119.99,
+    "ImmagineUrl": "https://static.nike.com/air-force-1.jpg",
+    "TaglieDisponibili": [
+      {
+        "Taglia": 38,
+        "Quantita": 4
+      },
+      {
+        "Taglia": 39,
+        "Quantita": 2
+      },
+      {
+        "Taglia": 40,
+        "Quantita": 0
+      }
+    ]
   },
   {
-    "Nome": "Stivaletto Classic",
-    "Marca": "Timberland",
-    "Descrizione": "Stivaletto da città resistente e impermeabile",
-    "Price": 129.50,
-    "ImmagineUrl": "/img/Donna.jpg"
+
+    "Nome": "Gazelle Bold",
+    "Marca": "Adidas",
+    "Descrizione": "Sneaker in suede rosa con suola spessa, stile retro casual.",
+    "Price": 99.95,
+    "ImmagineUrl": "https://assets.adidas.com/gazelle-bold.jpg",
+    "TaglieDisponibili": [
+      {
+        "Taglia": 38,
+        "Quantita": 4
+      },
+      {
+        "Taglia": 39,
+        "Quantita": 2
+      },
+      {
+        "Taglia": 40,
+        "Quantita": 0
+      }
+    ]
+  },
+  {
+
+    "Nome": "Escarpin effetto croco",
+    "Marca": "Zara",
+    "Descrizione": "Décolleté in pelle bordeaux stampa cocco, tacco medio.",
+    "Price": 49.95,
+    "ImmagineUrl": "C:\\Users\\Aminatou\\source\\repos\\ShoppingOnline\\ShoppingOnline\\wwwroot\\img\\Image.jpg",
+    "TaglieDisponibili": [
+      {
+        "Taglia": 38,
+        "Quantita": 4
+      },
+      {
+        "Taglia": 39,
+        "Quantita": 2
+      },
+      {
+        "Taglia": 40,
+        "Quantita": 0
+      }
+    ]
+  },
+  {
+
+    "Nome": "Jadon Platform",
+    "Marca": "Dr. Martens",
+    "Descrizione": "Stivaletto nero verniciato con suola platform e cuciture gialle.",
+    "Price": 199.00,
+    "TaglieDisponibili": [
+      {
+        "Taglia": 38,
+        "Quantita": 4
+      },
+      {
+        "Taglia": 39,
+        "Quantita": 2
+      },
+      {
+        "Taglia": 40,
+        "Quantita": 0
+      }
+    ],
+    "ImmagineUrl": "C:\\Users\\Aminatou\\source\\repos\\ShoppingOnline\\ShoppingOnline\\wwwroot\\img\\Donna2.jpg"
+  },
+  {
+    
+    "Nome": "530",
+    "Marca": "New Balance",
+    "Descrizione": "Scarpa da running rétro con mesh traspirante e dettagli argentati.",
+    "Price": 110.00,
+    "ImmagineUrl": "https://nb.scene7.com/nb530.jpg"
+  },
+  {
+
+    "Nome": "Chuck Taylor All Star",
+    "Marca": "Converse",
+    "Descrizione": "Classica sneaker alta in tela bianca con suola in gomma.",
+    "Price": 75.00,
+    "ImmagineUrl": "https://www.converse.com/chuck-taylor.jpg",
+    "TaglieDisponibili": [
+      {
+        "Taglia": 38,
+        "Quantita": 4
+      },
+      {
+        "Taglia": 39,
+        "Quantita": 2
+      },
+      {
+        "Taglia": 40,
+        "Quantita": 0
+      }
+    ]
+  },
+  {
+
+    "Nome": "Arizona",
+    "Marca": "Birkenstock",
+    "Descrizione": "Sandalo a due fasce in cuoio con plantare anatomico.",
+    "Price": 85.00,
+    "ImmagineUrl": "https://www.birkenstock.com/arizona.jpg",
+    "TaglieDisponibili": [
+      {
+        "Taglia": 38,
+        "Quantita": 4
+      },
+      {
+        "Taglia": 39,
+        "Quantita": 2
+      },
+      {
+        "Taglia": 40,
+        "Quantita": 0
+      }
+    ]
+  },
+  {
+
+    "Nome": "Mayze Stack",
+    "Marca": "Puma",
+    "Descrizione": "Sneaker platform in pelle nera e dettagli bianchi.",
+    "Price": 99.99,
+    "ImmagineUrl": "https://images.puma.com/mayze-stack.jpg",
+    "TaglieDisponibili": [
+      {
+        "Taglia": 38,
+        "Quantita": 4
+      },
+      {
+        "Taglia": 39,
+        "Quantita": 2
+      },
+      {
+        "Taglia": 40,
+        "Quantita": 0
+      }
+    ]
+  },
+  {
+
+    "Nome": "Botte alta con tacco",
+    "Marca": "Stradivarius",
+    "Descrizione": "Stivale elegante in similpelle nera con tacco largo.",
+    "Price": 69.99,
+    "ImmagineUrl": "https://static.stradivarius.com/boot.jpg",
+    "TaglieDisponibili": [
+      {
+        "Taglia": 38,
+        "Quantita":5
+      },
+      {
+        "Taglia": 39,
+        "Quantita": 2
+      },
+      {
+        "Taglia": 40,
+        "Quantita": 1
+      }
+    ]
+  },
+  {
+
+    "Nome": "Classic Clog",
+    "Marca": "Crocs",
+    "Descrizione": "Zoccolo leggero verde menta, ideale per uso quotidiano.",
+    "Price": 54.99,
+    "ImmagineUrl": "https://www.crocs.com/classic-clog.jpg",
+    "TaglieDisponibili": [
+      {
+        "Taglia": 38,
+        "Quantita": 4
+      },
+      {
+        "Taglia": 39,
+        "Quantita": 2
+      },
+      {
+        "Taglia": 40,
+        "Quantita": 0
+      }
+    ]
   }
 ]
